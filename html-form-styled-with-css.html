@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div yaha perent hai. */
+        div{
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        /* input ka jo type text hai uske uper property apply karni hai and sath me select ke uper bhi property same apply karni hai. */
+        input[type="text"], select{
+            /* input and select inlin hai to usko width 100% dekar full width kar diya hai. */
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            /* it optional */
+            display: inline-block;
+        }
+        /* input ka ko type submit hai uske upper hame property apply karni hai. */
+        input[type="submit"]{
+            /* input yaha inline hai but usko width 100% diya to waha full width leta hai. */
+            width: 100%;
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        /* input ka jo type submit hai uske uper hame hover karna hai and hover jab karenge tab background color change hona chahiye. */
+        input[type="submit"]:hover{
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h3>Using CSS to style an HTML Form</h3>
+    <div>
+        <form action="">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name...">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+            <label for="country">Country</label>
+            <select name="" id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <!-- inuput yaha inline hai. -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- input ka id and label ka name same hona chahiye. -->

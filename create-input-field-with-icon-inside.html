@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input box ko ham 100% width dene wale hai and jab input box ko 100% width dete hai to input box next line me shift ho jata hai. */
+        /* input box ke type text ke upper ham propery apply karne wale hai. */
+        input[type='text']{
+            width: 100%;
+            padding: 12px 20px 12px 80px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('../img2.png');
+            background-repeat: no-repeat;
+            /* x and y 10px and 10px */
+            background-position: 10px 0px ;
+            background-size: contain;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Input field with an icon inside</h2>
+<form action="">
+    <input type="text" name="search" placeholder="Search...">
+</form>
+</body>
+</html>

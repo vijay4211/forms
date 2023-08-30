@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input box inline hai hame usko width dekar 100% karna hai. */
+        /* input box ke under jo "type text" hai uske uper hame property apply karni hai. */
+        input[type="text"]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid red;
+            /* outline se jo border ke bakike side show hote hai waha hide ho jate hai. */
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Input fields with bottom border</h2>
+    <form action="">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname">
+    </form>
+</body>
+</html>

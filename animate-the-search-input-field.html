@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input inline hai. input ko width 130px.
+       */
+          /* input box ke "type text" ke uper ham property ka use karne wale hai. */
+          input[type='text']{
+            width: 130px;
+            /* left se padding hamne 80px chodi hai.*/
+            padding: 12px 20px 12px 80px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: white;
+            font-size: 16px;
+            background-image: url('../img2.png');
+            background-repeat: no-repeat;
+            /* jitan contain hai utani hame image ki size chahiye */
+            background-size: contain;
+            /* x 10px and y 0px */
+            background-position: 10px 0px;
+            /* width ke upper ham transition ka use karne wale hai. */
+            /* ease in out yaha close and open karta hai. */
+            /* 0.4second tak width badengi and uske baad end hongi.*/
+            transition: width 0.4s ease-in-out;
+          }
+
+          /* input box ke type text ke upper focus karenge and jab ham focus karte hai tab input box ki width jo hai waha 100% honi chahiye and jab focus nahi karte hai tab width nornmal honi chahiye jo ki width 130px hai, */
+          input[type='text']:focus{
+            width: 100%;
+          }
+    </style>
+</head>
+<body>
+    <h2>Animate width of search input</h2>
+    <form action="">
+        <input type="text" name="search" placeholder="Search...">
+    </form>
+</body>
+</html>
+
+<!-- 
+
+    In this example we use the CSS transition property to animate the width of the search input when it gets focus. You will learn more about the transition property later, in our CSS Transitions chapter.
+ -->

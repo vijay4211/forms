@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  -->
+    <style>
+        /* input box ko ham width 100% dene wale hai taki waha full width le sake */
+        /* input box ke type text ke upper ham property ko apply karne wale hai. */
+        /* input box ko width 100% dene se input box new line me shift ho jata hai. */
+        input[type='text']{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            /* hide the border outline */
+            outline: none;
+            /* transition 0.5second chalta hai. */
+            transition: 0.5s;
+        }
+        /* input ke under jo type text ke upeer hame :focus ka use karna hai. */
+        /* focus karne ke baad hame border ka change hoti huye dikahi deni chahiye. */
+        input[type='text']:focus{
+            border: 3px solid #555;
+        }
+    </style>
+</head>
+<body>
+    <h2>Input fields with black border on :focus</h2>
+
+<p>Here, the input field gets a black border color when it gets focus (clicked on). We have also added the CSS transition property to animate the border color (takes 0.5 seconds to change the color on focus):</p>
+
+<form action="">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" value="John">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" value="Doe">
+</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input yaha inline hai and usko ham width dekar 100% karne wale hai tak waha full width le sake */
+        /* input ke under jo type text hai useke uper ham property apply karne wale hai. */
+        /* input ko width 100% denese waha next line me shift ho jata hai. */
+        input[type="text"]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #555;
+            /* hide border outline */
+            outline: none;
+        }
+        /* input box per focus hone ke baad hame input box ke under background color show hona chahiye */
+        /* input ke type text ke upper ham focus ka use karne wale hai. */
+        input[type='text']:focus{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Input fields with color on :focus</h2>
+
+<p>Here, the input field gets a color when it gets focus (clicked on):</p>
+
+<form action="">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" value="John">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" value="Doe">
+
+</form>
+</body>
+</html>
