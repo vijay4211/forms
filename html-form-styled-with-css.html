@@ -9,9 +9,11 @@
         div{
             background-color: #f2f2f2;
             padding: 20px;
-            border-radius: 5px;
+            border-radius: 10px;
         }
-        /* input ka jo type text hai uske uper property apply karni hai and sath me select ke uper bhi property same apply karni hai. */
+        /* input ka jo "type text" hai uske uper property apply karni hai and sath me select ke uper bhi property same apply karni hai. */
+        /* input and select yaha do alag alag selector hai to hame same property ka use karna hai tono per to hame comma ka use karna hota hai.
+        input[type="text"], select{//write code}       */
         input[type="text"], select{
             /* input and select inlin hai to usko width 100% dekar full width kar diya hai. */
             width: 100%;
@@ -23,7 +25,7 @@
             /* it optional */
             display: inline-block;
         }
-        /* input ka ko type submit hai uske upper hame property apply karni hai. */
+        /* input ka jo "type submit" hai uske upper hame property apply karni hai. */
         input[type="submit"]{
             /* input yaha inline hai but usko width 100% diya to waha full width leta hai. */
             width: 100%;
@@ -34,7 +36,7 @@
             border-radius: 4px;
             cursor: pointer;
         }
-        /* input ka jo type submit hai uske uper hame hover karna hai and hover jab karenge tab background color change hona chahiye. */
+        /* input ka jo "type submit" hai uske uper hame hover karna hai and hover jab karenge tab background color change hona chahiye. */
         input[type="submit"]:hover{
             background-color: #45a049;
         }
@@ -62,3 +64,5 @@
 </html>
 
 <!-- input ka id and label ka name same hona chahiye. -->
+
+<!-- label+input,  label+select+option -->
